@@ -2,6 +2,7 @@ const cardFront = document.querySelector('.card-front p');
 const cardBack = document.querySelector('.card-back p');
 const nextButton = document.querySelector('.next-button');
 const numberButton = document.querySelector('.number-button');
+const cardInner = document.querySelector('.card-inner');
 
 let count = 0;
 let flashcards = [
@@ -28,6 +29,10 @@ function updateCard() {
     cardBack.textContent = flashcard.answer;
     flashcards = flashcards.filter(card => card !== flashcard);
 }
+
+cardInner.addEventListener('click', () => {
+    cardInner.classList.toggle('flipped');
+});
 
 updateCard();
 
