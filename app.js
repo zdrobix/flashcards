@@ -6,10 +6,20 @@ const cardInner = document.querySelector('.card-inner');
 
 let count = 0;
 let flashcards = [
-    { question: "intrebare1", answer: "Foarte mult" },
-    { question: "Ciaooo", answer: "Andrea Sabau" },
+    { question: "Intrebare1", answer: "Foarte mult" },
+    { question: "Intrebare2", answer: "Andrea Sabau" }
 ];
 let total = flashcards.length;
+
+let next_messages = [
+    {message : "Next pls..."},
+    {message : "Thank you, next"},
+    {message : "Urmatoarea intrebare"},
+    {message : "Next"},
+    {message : "She's on FIRE"},
+    {message : "Next"},
+    {message : "Next"}
+];
 
 function getRandomFlashcard() {
     const randomIndex = Math.floor(Math.random() * flashcards.length);
@@ -17,17 +27,25 @@ function getRandomFlashcard() {
 }
 
 function updateCard() {
+    cardInner.classList.remove('flipped');
+    cardBack.style.visibility = 'hidden';
     if (flashcards.length === 0) {
         cardFront.textContent = "Gata intrebarile iub!!!";
-        cardBack.textContent = "Da refresh la pagina pentru a incepe din nou.";
+        cardBack.textContent = "Da refresh la pagina pentru a incepe din nou. ";
         return;
     }
     count ++;
     const flashcard = getRandomFlashcard();
-    numberButton.textContent = count + '/' + total;
+    if (count < total)
+        numberButton.textContent = count + '/' + total;
+    else numberButton.textContent = 'Ultima intrebare iub!';
     cardFront.textContent = flashcard.question;
-    cardBack.textContent = flashcard.answer;
+        cardBack.textContent = flashcard.answer;
     flashcards = flashcards.filter(card => card !== flashcard);
+    nextButton.textContent = next_messages[Math.floor(Math.random() * next_messages.length)].message;
+    setTimeout(() => {
+        cardBack.style.visibility = 'visible';
+    }, 300);
 }
 
 cardInner.addEventListener('click', () => {
