@@ -54,12 +54,16 @@ body {
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .card-front {
     background-color: purple;
     color: #fff;
-    display: flex;
     align-items: center;
     border: 10px solid purple;
     border-radius: 10px;
@@ -71,7 +75,6 @@ body {
 .card-back {
     background-color: plum;
     color: #fff;
-    display: flex;
     align-items: center;
     border: 10px solid plum;
     border-radius: 10px;
