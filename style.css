@@ -30,7 +30,7 @@ body {
 }
 
 .card {
-    width: 300px;
+    width: 400px;
     height: 200px;
     perspective: 1000px;
     margin-bottom: 5px; 
@@ -64,7 +64,7 @@ body {
     border: 10px solid purple;
     border-radius: 10px;
     justify-content: center;
-    font-size: 24px;
+    font-size: 15px;
     transform: rotateY(0deg);
 }
 
@@ -76,12 +76,12 @@ body {
     border: 10px solid plum;
     border-radius: 10px;
     justify-content: center;
-    font-size: 24px;
+    font-size: 15px;
     transform: rotateY(180deg);
 }
 
 .next-button {
-    width: 300px; 
+    width: 400px; 
     height: 50px; 
     background-color: purple;
     color: white;
@@ -98,7 +98,7 @@ body {
 }
 
 .number-button {
-    width: 300px; 
+    width: 400px; 
     height: 50px; 
     background-color: purple;
     color: white;
