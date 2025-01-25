@@ -128,7 +128,7 @@
         "answer": "True\nUn calculator poate fi dotat cu mai multe placi de retea pentru a gestiona conexiuni diferite, inclusiv LAN și Wi-Fi."
       },
       {
-        "question": "Un calculator de leaga de un switch cu un cablu Straight-Through.",
+        "question": "Un calculator se leaga de un switch cu un cablu Straight-Through.",
         "answer": "True\nCablurile Straight-Through sunt utilizate pentru conectarea calculatoarelor la switch-uri sau hub-uri."
       },
       {
@@ -334,7 +334,7 @@
         {"question": "1.1.1.1 nu este o adresa IP privata", "answer": "True"},
         {"question": "Netmask-ul unei retele cu 512 adrese ip este /24", "answer": "False"},
         {"question": "SMTP nu este situat la nivelul Retea", "answer": "True"},
-        {"question": "Un socket PD se creeaza cu parametrii AF_INET si SOCK_STREAM", "answer": "False"},
+        {"question": "Un socket UDP se creeaza cu parametrii AF_INET si SOCK_STREAM", "answer": "False"},
         {"question": "FTP este situat la nivelul Transport", "answer": "False"},
         {"question": "Operatia logica AND intre masca si adresa IP are ca rezultat adresa retelei", "answer": "True"},
         {"question": "SSH nu este situat la nivelul Retea", "answer": "True"},
@@ -347,7 +347,7 @@
         {"question": "Apelul connect() poate fi folosit in clienti UDP", "answer": "False"},
         {"question": "Apelul recvfrom() trimite date catre clientul UDP", "answer": "False"},
         {"question": "IP nu este situat la nivelul Aplicatie", "answer": "True"},
-        {"question": "Nu toate adresele IP din clasa 192.168.0.0/8 sunt private", "answer": "False"},
+        {"question": "Nu toate adresele IP din clasa 192.168.0.0/8 sunt private", "answer": "True\n192.168.0.0/8 contine si adrese publice/speciale. 192.168.0.0/16 este privat"},
         {"question": "FTP nu este situat la nivelul Aplicatie", "answer": "False"},
         {"question": "Ring nu este o topologie de retea", "answer": "False"},
         {"question": "Apelul bind() nu poate fi folosit in clienti UDP", "answer": "False"},
