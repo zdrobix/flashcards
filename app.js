@@ -17,11 +17,6 @@ fetch('flashcards.json')
     .catch(error => console.error('Error loading JSON:', error));
 
 let next_messages = [
-    {message : "Next pls..."},
-    {message : "Thank you, next"},
-    {message : "Urmatoarea intrebare"},
-    {message : "Next"},
-    {message : "She's on FIRE"},
     {message : "Next"},
     {message : "Next"}
 ];
@@ -35,7 +30,7 @@ function updateCard() {
     cardInner.classList.remove('flipped');
     cardBack.style.visibility = 'hidden';
     if (flashcards.length === 0 ) {
-        cardFront.textContent = "Gata intrebarile iub!!!";
+        cardFront.textContent = "Aceasta a fost ultima intrebare.";
         cardBack.textContent = "Da refresh la pagina pentru a incepe din nou. ";
         setTimeout(() => {
         cardBack.style.visibility = 'visible';
