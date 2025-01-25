@@ -121,154 +121,364 @@
     },
     {
         "question": "Un hub intelege adrese MAC.",
-        "answer": "False"
+        "answer": "False\nUn hub nu procesează adrese MAC, ci transmite pachetele către toate porturile sale, nefiind capabil să diferențieze dispozitivele din rețea."
       },
       {
         "question": "ARP nu inseamna Address Resolution Protocol.",
-        "answer": "False"
+        "answer": "False\nARP înseamnă Address Resolution Protocol și este folosit pentru a asocia adresele IP cu adresele MAC."
       },
       {
         "question": "Un netmask este un numar binar pe 32 de biti.",
-        "answer": "True"
+        "answer": "True\nNetmask-ul este reprezentat pe 32 de biți și este utilizat pentru a delimita partea de rețea și partea de gazdă a unei adrese IP."
       },
       {
         "question": "Un calculator poate avea o singura placa de retea.",
-        "answer": "False"
+        "answer": "False\nUn calculator poate avea mai multe plăci de rețea pentru a se conecta la rețele diferite."
       },
       {
         "question": "Adresa 193.231.20.3 poate fi adresa de retea.",
-        "answer": "False"
+        "answer": "False\nO adresă de rețea are toți biții din partea de gazdă setați la 0, iar 193.231.20.3 nu îndeplinește această condiție."
       },
       {
         "question": "11111111.10000000.00000000.00000000 = 255.1.0.0.",
-        "answer": "False"
+        "answer": "False\nReprezentarea binară indicată nu corespunde valorii 255.1.0.0; prima octetă este corectă, dar restul nu sunt."
       },
       {
         "question": "TCP este intotdeauna mai rapid ca UDP.",
-        "answer": "False"
+        "answer": "False\nUDP este mai rapid decât TCP deoarece nu implică mecanisme de confirmare sau retransmisie."
       },
       {
         "question": "Nu pot exista mai multe calculatoare cu adresa 192.168.1.1.",
-        "answer": "True"
+        "answer": "True\nÎntr-o rețea, fiecare adresă IP trebuie să fie unică pentru a evita conflictele."
       },
       {
         "question": "LAN este o retea globala.",
-        "answer": "False"
+        "answer": "False\nLAN (Local Area Network) este o rețea locală care acoperă o arie restrânsă, cum ar fi o clădire sau un campus."
       },
       {
         "question": "TCP este situat la nivelul Aplicatie.",
-        "answer": "False"
+        "answer": "False\nTCP este un protocol de transport și operează la nivelul Transport din modelul OSI."
       },
       {
         "question": "192.168.2.155 face parte din clasa 192.168.0.0/23.",
-        "answer": "True"
+        "answer": "True\nPrefixul /23 acoperă intervalul 192.168.0.0 - 192.168.1.255, deci adresa aparține acestei rețele."
       },
       {
         "question": "Adresa de broadcast nu se poate calcula pe baza adresei de retea si a netmask-ului.",
-        "answer": "False"
+        "answer": "False\nAdresa de broadcast se calculează setând toți biții din partea de gazdă a adresei IP la 1."
       },
       {
         "question": "Apelul bind() poate fi folosit in clienti TCP.",
-        "answer": "True"
+        "answer": "True\nApelul bind() poate fi utilizat pentru a asocia clientul la o adresă IP și un port specific."
       },
       {
         "question": "Apelul bind() este obligatoriu in orice server TCP.",
-        "answer": "True"
+        "answer": "True\nServerele TCP trebuie să utilizeze bind() pentru a asculta pe un port specific."
       },
       {
         "question": "In LAN pot exista mai multe calculatoare cu adresa 192.168.1.1.",
-        "answer": "False"
+        "answer": "False\nAdresele IP trebuie să fie unice în aceeași rețea pentru a evita conflictele."
       },
       {
         "question": "O retea cu netmask-ul 255.255.255.0 are 2^8=256 ip-uri.",
-        "answer": "True"
+        "answer": "True\nO mască de rețea /24 are 256 adrese posibile, inclusiv adresa de rețea și cea de broadcast."
       },
       {
         "question": "Nu toate adresele IP din clasa 10.0.0.0/6 sunt private.",
-        "answer": "True"
+        "answer": "True\nClasa 10.0.0.0/8 este rezervată pentru adrese private, dar /6 include și alte intervale."
       },
       {
         "question": "Un switch nu poate transporta pachete UDP.",
-        "answer": "False"
+        "answer": "False\nSwitch-urile funcționează la nivelul 2 (Data Link) și transportă orice tip de pachete, inclusiv UDP."
       },
       {
         "question": "192.168.0.2/24 si 192.168.1.6/24 fac parte din aceasi retea.",
-        "answer": "False"
+        "answer": "False\nCele două adrese aparțin unor rețele diferite, deoarece au prefixe diferite."
       },
       {
         "question": "MAC inseamna media access control.",
-        "answer": "True"
+        "answer": "True\nMAC este prescurtarea pentru Media Access Control, un identificator unic pentru dispozitivele dintr-o rețea."
       },
       {
         "question": "DNS nu este situat la nivelul Retea.",
-        "answer": "True"
+        "answer": "True\nDNS operează la nivelul Aplicație, facilitând rezolvarea numelor de domenii în adrese IP."
       },
       {
         "question": "00:00:00:00:00:00 nu este adresa MAC de broadcast.",
-        "answer": "True"
+        "answer": "True\nAdresa MAC de broadcast este FF:FF:FF:FF:FF:FF, nu 00:00:00:00:00:00."
       },
       {
         "question": "HTTP foloseste protocolul TCP.",
-        "answer": "True"
+        "answer": "True\nHTTP utilizează TCP pentru a asigura livrarea fiabilă a datelor între client și server."
       },
       {
         "question": "Adresa 193.231.20.0 poate fi adresa de retea.",
-        "answer": "True"
+        "answer": "True\nAdresa de rețea are partea de gazdă setată la 0, iar 193.231.20.0 respectă această condiție."
       },
       {
         "question": "Adresa 43.23.87.64/27 poate fi adresa de retea.",
-        "answer": "True"
+        "answer": "True\nAceasta este prima adresă din intervalul specificat de /27, deci este adresa de rețea."
       },
       {
         "question": "O retea cu netmask-ul 255.255.255.0 are 2^8=128 ip-uri.",
-        "answer": "False"
+        "answer": "False\nO mască de rețea /24 are 256 adrese posibile, nu 128."
       },
       {
         "question": "Adresa 127.0.0.1 nu poate fi adresa de broadcast.",
-        "answer": "True"
+        "answer": "True\nAdresa 127.0.0.1 este rezervată pentru loopback și nu poate fi utilizată ca adresă de broadcast."
       },
       {
         "question": "Adresa MAC este reprezentata pe 48 de biti.",
-        "answer": "True"
+        "answer": "True\nAdresele MAC sunt codificate pe 48 de biți, împărțiți în 6 grupuri de câte 2 cifre hexazecimale."
       },
       {
         "question": "Un switch este mai performant ca un hub.",
-        "answer": "True"
+        "answer": "True\nUn switch poate direcționa pachetele către destinația corectă folosind adrese MAC, în timp ce un hub doar retransmite către toate porturile."
       },
       {
         "question": "Adresa 192.168.0.0 poate fi adresa de retea.",
-        "answer": "True"
+        "answer": "True\nAceasta este prima adresă din intervalul specificat de rețea și reprezintă adresa de rețea."
       },
       {
         "question": "SSH este situat la nivelul Aplicatie.",
-        "answer": "True"
+        "answer": "True\nSSH operează la nivelul Aplicație pentru a oferi sesiuni criptate de acces la distanță."
       },
       {
         "question": "Un calculator poate avea mai multe placi de retea.",
-        "answer": "True"
+        "answer": "True\nUn calculator poate fi dotat cu mai multe placi de retea pentru a gestiona conexiuni diferite, inclusiv LAN și Wi-Fi."
       },
       {
         "question": "Un calculator de leaga de un switch cu un cablu Straight-Through.",
-        "answer": "True"
+        "answer": "True\nCablurile Straight-Through sunt utilizate pentru conectarea calculatoarelor la switch-uri sau hub-uri."
       },
       {
         "question": "Nu pot exista mai multe calculaoare cu adresa 127.0.0.1.",
-        "answer": "True"
+        "answer": "True\nAdresa 127.0.0.1 este adresa de loopback și este rezervată pentru testarea rețelei pe un singur calculator."
       },
       {
         "question": "IP este situat la nivelul Retea.",
-        "answer": "True"
+        "answer": "True\nProtocolul IP funcționează la nivelul Rețea în modelul OSI și este responsabil de rutarea pachetelor."
       },
       {
         "question": "O retea cu netmask-ul 255.255.255.0 poate avea maxim 2^8-2=254 calculatoare.",
-        "answer": "True"
+        "answer": "True\nMasca 255.255.255.0 indică 8 biți pentru gazde, astfel se pot aloca 254 adrese (2^8 - 2)."
       },
       {
         "question": "Adresa 193.256.20.0 poate fi adresa de retea.",
-        "answer": "False"
+        "answer": "False\nOctetul 256 nu este valid pentru adrese IP, deoarece valorile permise sunt între 0 și 255."
       },
       {
         "question": "Apelul sendto() trimite date catre clientul UDP.",
-        "answer": "True"
-      }
+        "answer": "True\nFuncția sendto() este utilizată pentru trimiterea datelor către un client UDP specificat prin adresă și port."
+      },
+      {
+        "question": "HTTP este situat la nivelul Link.",
+        "answer": "False\nHTTP funcționează la nivelul Aplicație, nu la nivelul Link din modelul OSI."
+      },
+      {
+        "question": "TCP nu este situat la nivelul Aplicatie.",
+        "answer": "True\nTCP operează la nivelul Transport și este responsabil de livrarea fiabilă a datelor."
+      },
+      {
+        "question": "HTTP transmite datele criptat.",
+        "answer": "True\nProtocolul HTTPS, o variantă a HTTP, transmite datele criptat folosind TLS/SSL."
+      },
+      {
+        "question": "Adresa MAC este reprezentat pe 6 grupuri de cate 2 cifre hexa.",
+        "answer": "True\nAdresele MAC sunt formate din 6 octeți (48 de biți), fiecare reprezentat în format hexazecimal."
+      },
+      {
+        "question": "HTTP nu foloseste protocolul Tcp.",
+        "answer": "False\nHTTP utilizează protocolul TCP pentru a asigura conexiuni fiabile și ordonate."
+      },
+      {
+        "question": "Un hub intelege adresa MAC.",
+        "answer": "False\nUn hub este un dispozitiv de nivel fizic care transmite pachetele către toate porturile fără a înțelege adresele MAC."
+      },
+      {
+        "question": "Apelul connect() nu poate fi folosit in clienti TCP.",
+        "answer": "False\nFuncția connect() este utilizată pentru a iniția o conexiune TCP către un server."
+      },
+      {
+        "question": "Doua calculatoare din internet pot sa aiba aceeasi adresa IP daca au aceeasi adresa MAC.",
+        "answer": "False\nAdresele IP trebuie să fie unice într-o rețea, indiferent de adresele MAC ale dispozitivelor."
+      },
+      {
+        "question": "FTP este situat la nivelul Retea.",
+        "answer": "False\nFTP funcționează la nivelul Aplicație pentru transferul fișierelor între dispozitive."
+      },
+      {
+        "question": "192.168.1.2/24 si 192.168.1.6/22 fac parte din aceeasi retea.",
+        "answer": "False\nAceste adrese IP au măști de rețea diferite, astfel nu fac parte din aceeași rețea."
+      },
+      {
+        "question": "Telefoanele mobile nu se pot conecta la internet fara placa de retea.",
+        "answer": "True\nTelefoanele mobile folosesc plăci de rețea integrate pentru conexiuni Wi-Fi sau mobile."
+      },
+      {
+        "question": "Prescurtarea CLI vine de la Coding Line Interface.",
+        "answer": "False\nCLI înseamnă Command Line Interface, o metodă de interacțiune cu sistemele informatice prin comenzi text."
+      },
+      {
+        "question": "TCP este uneori mai rapid ca UDP.",
+        "answer": "True\nÎn anumite situații, TCP poate fi mai rapid decât UDP, de exemplu, atunci când retransmisiile reduc pierderile de date."
+      },
+      {
+        "question": "Adresa de retea nu se poate calcula pe baza adresei de broadcast si a netmask-ului.",
+        "answer": "False\nAdresa de rețea poate fi calculată prin aplicarea operației inverse față de adresa de broadcast și masca de rețea."
+      },
+      {
+        "question": "Apelul recvfrom() citeste date de la clientul UDP.",
+        "answer": "True\nFuncția recvfrom() este utilizată pentru a primi date de la un client UDP specificat."
+      },
+      {
+        "question": "127.16.0.1 nu este o adresa IP privata",
+        "answer": "False\nPentru că adresele IP din intervalul 127.0.0.0/8 sunt rezervate pentru loopback și nu sunt utilizate în rețele private."
+      },
+      {
+        "question": "Apelul listen() nu este obligatoriu in orice client TCP",
+        "answer": "True\nPentru că listen() este utilizat doar pe partea de server pentru a pune socket-ul în modul de ascultare, nu în client."
+      },
+      {
+        "question": "O clasa de adrese IP trebuie sa inceapa la multiplu de dimensiunea clasei",
+        "answer": "True\nPentru că fiecare clasă de adrese IP este definită de un interval specific, iar începutul acestuia este multiplu al dimensiunii clasei."
+      },
+      {
+        "question": "Un hub este mai performant ca un switch",
+        "answer": "False\nPentru că un switch operează la nivelul 2 al modelului OSI și folosește adrese MAC pentru a direcționa traficul, în timp ce un hub transmite datele către toate dispozitivele din rețea."
+      },
+      {
+        "question": "UDP este situat la nivelul Transport",
+        "answer": "True\nPentru că UDP (User Datagram Protocol) face parte din nivelul Transport al modelului OSI, oferind o metodă simplă și rapidă de transmitere a datelor fără confirmare."
+      },
+      {
+        "question": "FF:FF:FF:FF:FF:FF nu este adresa de MAC de broadcast",
+        "answer": "True\nPentru că FF:FF:FF:FF:FF:FF este, de fapt, adresa de broadcast pentru MAC, ceea ce face afirmația falsă."
+      },
+      {
+        "question": "10.10.10.10 este o adresa IP privata",
+        "answer": "True\nPentru că adresele IP din intervalul 10.0.0.0/8 sunt rezervate pentru rețele private conform RFC 1918."
+      },
+      {
+        "question": "Nu toate adresele IP din clasa 172.0.0.0/12 sunt private",
+        "answer": "True\nPentru că doar intervalul 172.16.0.0 – 172.31.255.255 este rezervat pentru rețele private, restul fiind publice."
+      },
+      {
+        "question": "Un socket TCP se creeaza cu parametrii AF_INET si SOCK_STREAM",
+        "answer": "True\nPentru că AF_INET indică utilizarea IPv4, iar SOCK_STREAM indică utilizarea TCP pentru socket-uri."
+      },
+      {
+        "question": "Netmask-ul unei retele cu 512 adrese ip este /23",
+        "answer": "True\nPentru că o rețea cu 512 adrese IP necesită o mască de rețea de 23 de biți, ceea ce oferă exact 512 adrese (2^9 = 512)."
+      },
+      {
+        "question": "192.168.1.155 face parte din clasa 192.168.0.0/23",
+        "answer": "False\nPentru că masca /23 acoperă intervalul 192.168.0.0 – 192.168.1.255, iar 192.168.1.155 face parte din acest interval, deci afirmația este falsă."
+      },
+      {
+        "question": "SMTP este situat la nivelul Transport",
+        "answer": "False\nPentru că SMTP (Simple Mail Transfer Protocol) este situat la nivelul Aplicație, nu la nivelul Transport."
+      },
+      {
+        "question": "Nu exista mai multe calculatoare cu adresa 127.0.0.1",
+        "answer": "False\nPentru că 127.0.0.1 este o adresă de loopback utilizată exclusiv local pe fiecare calculator, deci fiecare dispozitiv poate avea această adresă."
+      },
+      {
+        "question": "FF:FF:FF:FF:FF:FF este adresa MAC de broadcast",
+        "answer": "True\nPentru că aceasta este adresa de broadcast MAC, utilizată pentru a trimite pachete către toate dispozitivele dintr-o rețea."
+      },
+      {
+        "question": "Toate adresele IP din clasa 192.168.0.0/8 sunt private",
+        "answer": "False\nPentru că 192.168.0.0/16 este intervalul privat, nu întreaga clasă 192.0.0.0/8."
+      },
+      {
+        "question": "Adresa 193.231.20.0 poate fi adresa de retea",
+        "answer": "True\nPentru că o adresă de rețea este prima adresă dintr-un interval definit de o mască, iar 193.231.20.0 poate îndeplini această condiție."
+      },
+      {
+        "question": "Toate adresele IP din clasa 192.168.0.0/16 sunt private",
+        "answer": "True\nPentru că 192.168.0.0/16 este un interval rezervat exclusiv pentru rețele private conform RFC 1918."
+      },
+      {
+        "question": "BUS este o topologie de retea",
+        "answer": "True\nPentru că topologia BUS este un model clasic de rețea în care toate dispozitivele sunt conectate la un singur cablu principal."
+      },
+      {
+        "question": "TCP este situat la nivelul Retea",
+        "answer": "False\nPentru că TCP (Transmission Control Protocol) este situat la nivelul Transport, nu la nivelul Rețea."
+      },
+      {
+        "question": "HTTP este situat la nivelul Transport",
+        "answer": "False\nPentru că HTTP (HyperText Transfer Protocol) este situat la nivelul Aplicație, nu la nivelul Transport."
+      },
+      {
+        "question": "Adresa IP nu se poate determina pe baza adresei de retea si a netmask-ului",
+        "answer": "True\nPentru că adresa IP nu poate fi derivată dintr-o adresă de rețea și o mască fără alte informații suplimentare."
+      },
+      {
+        "question": "192.168.0.2/23 si 192.168.1.6/24 fac parte din aceeasi retea",
+        "answer": "True\nPentru că masca /23 acoperă ambele adrese IP în același interval de rețea."
+      },
+      {
+        "question": "Pe un acelasi server web pot fi gazduite mai multe site-uri web",
+        "answer": "True\nPentru că prin tehnologia de hosting virtual, un server poate găzdui mai multe domenii prin IP-uri sau nume de gazdă diferite."
+      },
+        {"question": "Serviciul DNS ruleaza pe portul UDP 53", "answer": "True"},
+        {"question": "Adresa de retea nu se poate calcula pe baza adresei IP si a netmask-ului", "answer": "False"},
+        {"question": "Adresa 87.35.15.7/29 poate fi adresa de broadcast", "answer": "True"},
+        {"question": "HTTP inseamna Hyperspeed Transfer Protocol", "answer": "False"},
+        {"question": "Un switch nu poate transporta pachete TCP", "answer": "False"},
+        {"question": "Adresa 193.231.20.3 poate fi adresa de retea", "answer": "False"},
+        {"question": "Adresa 192.168.0.255 nu poate fi adresa de retea", "answer": "True"},
+        {"question": "Toate adresele IP din clasa 172.0.0.0/12 sunt private", "answer": "False"},
+        {"question": "Adresa MAC este reprezentata pe 48 de biti", "answer": "True"},
+        {"question": "255.255.255.255 este adresa MAC de broadcast", "answer": "False"},
+        {"question": "SMTP nu este situat la nivelul Aplicatie", "answer": "False"},
+        {"question": "IP nu este situat la nivelul Aplicatie", "answer": "True"},
+        {"question": "SMTP este situat la nivelul Retea", "answer": "False"},
+        {"question": "Apelul connect() nu poate fi folosit in clienti UDP", "answer": "True"},
+        {"question": "Adresa 193.255.20.0 poate fi adresa de retea", "answer": "True"},
+        {"question": "192.168.1.2/24 si 192.168.1.6/22 fac parte din aceeasi retea", "answer": "False"},
+        {"question": "SSH este situat la nivelul Transport", "answer": "False"},
+        {"question": "O clasa /24 se poate imparti in 3 subclase /25", "answer": "False"},
+        {"question": "192.168.168.168 este o adresa IP privata", "answer": "True"},
+        {"question": "Adresa MAC este reprezentat pe 6 cifre hexa", "answer": "False"},
+        {"question": "Apelul bind() poate fi folosit in clienti TCP", "answer": "True"},
+        {"question": "172.31.0.1 este o adresa IP privata", "answer": "True"},
+        {"question": "HTTP nu foloseste protocolul TCP", "answer": "False"},
+        {"question": "ARP inseamna Address Resolution Protocol", "answer": "True"},
+        {"question": "Serviciul DNS ruleaza pe portul UDP 53", "answer": "True"},
+        {"question": "SMTP nu este situat la nivelul Retea", "answer": "True"},
+        {"question": "Un calculator poate avea mai multe adrese IP", "answer": "True"},
+        {"question": "Default gateway-ul unui calculator se afla in aceeasi retea cu el", "answer": "True"},
+        {"question": "1.1.1.1 nu este o adresa IP privata", "answer": "True"},
+        {"question": "Netmask-ul unei retele cu 512 adrese ip este /24", "answer": "False"},
+        {"question": "SMTP nu este situat la nivelul Retea", "answer": "True"},
+        {"question": "Un socket PD se creeaza cu parametrii AF_INET si SOCK_STREAM", "answer": "False"},
+        {"question": "FTP este situat la nivelul Transport", "answer": "False"},
+        {"question": "Operatia logica AND intre masca si adresa IP are ca rezultat adresa retelei", "answer": "True"},
+        {"question": "SSH nu este situat la nivelul Retea", "answer": "True"},
+        {"question": "Exista si altfel de socket-uri decat TCP si UDP", "answer": "True"},
+        {"question": "TCP asteapta confirmarea primirii pachetelor", "answer": "True"},
+        {"question": "Un switch nu poate transport pachete UDP", "answer": "False"},
+        {"question": "O placa de retea poate avea mai multe adrese IP", "answer": "True"},
+        {"question": "Netmask-ul unei retele cu 512 adrese ip este /24", "answer": "False"},
+        {"question": "Adresa MAC poate fi schimbata", "answer": "True"},
+        {"question": "Apelul connect() poate fi folosit in clienti UDP", "answer": "False"},
+        {"question": "Apelul recvfrom() trimite date catre clientul UDP", "answer": "False"},
+        {"question": "IP nu este situat la nivelul Aplicatie", "answer": "True"},
+        {"question": "Nu toate adresele IP din clasa 192.168.0.0/8 sunt private", "answer": "False"},
+        {"question": "FTP nu este situat la nivelul Aplicatie", "answer": "False"},
+        {"question": "Ring nu este o topologie de retea", "answer": "False"},
+        {"question": "Apelul bind() nu poate fi folosit in clienti UDP", "answer": "False"},
+        {"question": "Star este o topologie de retea", "answer": "True"},
+        {"question": "HTTP nu este situat la nivelul Transport", "answer": "True"},
+        {"question": "Un calculator poate avea o singura placa de retea", "answer": "False"},
+        {"question": "UDP nu este situat la nivelul Aplicatie", "answer": "True"},
+        {"question": "172.15.0.1 este o adresa IP privata", "answer": "False"},
+        {"question": "Adresa 83.35.15.8/28 poate fi adresa de broadcast", "answer": "False"},
+        {"question": "Netmask-ul unei retele cu 512 adrese ip este /23", "answer": "True"},
+        {"question": "192.168.0.2/24 si 192.168.1.6/24 fac parte din aceeasi retea", "answer": "False"},
+        {"question": "Pot exista calculatoare cu adresa 192.168.1.0", "answer": "True"}
+
 ]
