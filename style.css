@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -64,24 +64,28 @@ body {
     justify-content: flex-end;
     align-items: center;
     white-space: pre-line;
-}
-
-.card-front {
-    color: #fff;
+    color: plum;
     align-items: center;
     border-radius: 10px;
     justify-content: center;
     font-size: 15px;
+}
+
+.card-front {
     transform: rotateY(0deg);
 }
 
 .card-back {
-    color: #fff;
-    align-items: center;
-    border-radius: 10px;
-    justify-content: center;
-    font-size: 15px;
     transform: rotateY(180deg);
+}
+
+.card-inner:hover {
+    background-color: plum;
+}
+
+.card-back:hover,
+.card-front:hover {
+    color: white;
 }
 
 button, .next-button, .switch-course {
