@@ -1,125 +1,5 @@
 [
     {
-        "question": "Ce este o rețea de calculatoare?",
-        "answer": "O rețea de calculatoare este un sistem de interconectare a mai multor dispozitive pentru a partaja resurse și informații."
-    },
-    {
-        "question": "Ce este modelul TCP/IP?",
-        "answer": "Modelul TCP/IP este o suită de protocoale utilizată pentru comunicarea în rețelele de calculatoare, structurat pe patru straturi: aplicație, transport, rețea și acces la rețea."
-    },
-    {
-        "question": "Care sunt cele patru straturi ale modelului TCP/IP?",
-        "answer": "Straturile modelului TCP/IP sunt: stratul de aplicație, stratul de transport, stratul de rețea și stratul de acces la rețea."
-    },
-    {
-        "question": "Ce este o adresă MAC?",
-        "answer": "O adresă MAC (Media Access Control) este un identificator unic atribuit interfeței de rețea a unui dispozitiv pentru comunicațiile la nivelul legăturii de date."
-    },
-    {
-        "question": "Care este diferența dintre TCP și UDP?",
-        "answer": "TCP este un protocol orientat pe conexiune care asigură livrarea fiabilă a datelor, în timp ce UDP este un protocol fără conexiune, mai rapid, dar fără garanții de livrare."
-    },
-    {
-        "question": "Cum funcționează protocolul SMTP?",
-        "answer": "SMTP (Simple Mail Transfer Protocol) este utilizat pentru trimiterea mesajelor de e-mail de la client la server și între serverele de e-mail."
-    },
-    {
-        "question": "Ce este protocolul POP3?",
-        "answer": "POP3 (Post Office Protocol) este un protocol folosit pentru descărcarea mesajelor de e-mail de pe un server pe un client, de obicei ștergând mesajele de pe server după descărcare."
-    },
-    {
-        "question": "Care este avantajul protocolului IMAP față de POP3?",
-        "answer": "IMAP (Internet Message Access Protocol) permite accesul la e-mailuri direct pe server, sincronizând mesajele pe mai multe dispozitive, spre deosebire de POP3, care le descarcă local."
-    },
-    {
-        "question": "Ce este o adresă IP privată?",
-        "answer": "O adresă IP privată este utilizată în rețelele locale și nu este accesibilă direct pe Internet. Exemple: 192.168.x.x, 10.x.x.x."
-    },
-    {
-        "question": "Ce este NAT și de ce este utilizat?",
-        "answer": "NAT (Network Address Translation) este un mecanism care permite dispozitivelor cu adrese IP private să acceseze Internetul folosind o adresă IP publică comună."
-    },
-    {
-        "question": "Ce este un socket?",
-        "answer": "Un socket este un punct final al unei conexiuni de rețea utilizat pentru a transmite date între aplicații printr-un protocol, precum TCP sau UDP."
-    },
-    {
-        "question": "Cum funcționează protocolul DNS?",
-        "answer": "DNS (Domain Name System) traduce numele de domenii, precum www.example.com, în adrese IP, facilitând accesul la resursele de pe Internet."
-    },
-    {
-        "question": "Ce este protocolul ARP?",
-        "answer": "ARP (Address Resolution Protocol) este utilizat pentru a găsi adresa MAC asociată unei adrese IP într-o rețea locală."
-    },
-    {
-        "question": "Ce este protocolul RARP?",
-        "answer": "RARP (Reverse Address Resolution Protocol) este utilizat pentru a găsi adresa IP asociată unei adrese MAC."
-    },
-    {
-        "question": "Ce este ICMP și cum este utilizat?",
-        "answer": "ICMP (Internet Control Message Protocol) este folosit pentru a trimite mesaje de eroare și informații despre starea rețelei, precum în comanda ping."
-    },
-    {
-        "question": "Cum funcționează protocolul DHCP?",
-        "answer": "DHCP (Dynamic Host Configuration Protocol) atribuie automat adrese IP și alte setări de rețea dispozitivelor dintr-o rețea."
-    },
-    {
-        "question": "Ce este o adresă IP publică?",
-        "answer": "O adresă IP publică este vizibilă pe Internet și permite dispozitivelor să comunice direct cu alte dispozitive din afara rețelei locale."
-    },
-    {
-        "question": "Ce este un firewall?",
-        "answer": "Un firewall este un sistem de securitate care monitorizează și controlează traficul de rețea bazat pe reguli predefinite pentru a proteja împotriva accesului neautorizat."
-    },
-    {
-        "question": "Ce este o rețea wireless?",
-        "answer": "O rețea wireless este o rețea care permite dispozitivelor să comunice fără cabluri, folosind tehnologii precum Wi-Fi."
-    },
-    {
-        "question": "Ce este protocolul HTTPS?",
-        "answer": "HTTPS (Hypertext Transfer Protocol Secure) este o versiune securizată a HTTP care utilizează criptarea SSL/TLS pentru a proteja datele transmise."
-    },
-    {
-        "question": "Cum funcționează criptarea SSL/TLS?",
-        "answer": "SSL/TLS criptează datele transmise între client și server, asigurând confidențialitatea și integritatea acestora."
-    },
-    {
-        "question": "Ce este o adresă IPv6?",
-        "answer": "O adresă IPv6 este un identificator unic pentru dispozitivele de rețea, utilizând un format pe 128 de biți pentru a oferi un număr mult mai mare de adrese decât IPv4."
-    },
-    {
-        "question": "Ce este controlul fluxului în rețele?",
-        "answer": "Controlul fluxului reglează rata de transmitere a datelor între dispozitive pentru a preveni supraîncărcarea receptorului."
-    },
-    {
-        "question": "Cum funcționează mecanismele de tunelare VPN?",
-        "answer": "Tunelarea VPN implică învelirea datelor într-un alt protocol pentru a asigura securitatea și confidențialitatea transmiterii printr-o rețea publică."
-    },
-    {
-        "question": "Ce este filtrarea pachetelor?",
-        "answer": "Filtrarea pachetelor este procesul de a permite sau bloca pachete de date în funcție de reguli, cum ar fi adresele IP sau porturile."
-    },
-    {
-        "question": "Ce este o adresă IP statică?",
-        "answer": "O adresă IP statică este o adresă care rămâne constantă și nu se schimbă în timp, fiind configurată manual."
-    },
-    {
-        "question": "Ce este o adresă IP dinamică?",
-        "answer": "O adresă IP dinamică este atribuită automat de un server DHCP și poate varia la fiecare conectare a dispozitivului."
-    },
-    {
-        "question": "Ce este o rețea locală (LAN)?",
-        "answer": "O rețea locală (LAN) este o rețea care interconectează dispozitive pe o arie geografică restrânsă, cum ar fi o clădire."
-    },
-    {
-        "question": "Ce este o rețea largă (WAN)?",
-        "answer": "O rețea largă (WAN) este o rețea care acoperă o arie geografică extinsă, interconectând mai multe rețele locale (LAN)."
-    },
-    {
-        "question": "Cum funcționează protocolul de dirijare OSPF?",
-        "answer": "OSPF (Open Shortest Path First) este un protocol de dirijare bazat pe starea legăturilor, care calculează cea mai scurtă cale între routere folosind algoritmul Dijkstra."
-    },
-    {
         "question": "Un hub intelege adrese MAC.",
         "answer": "False\nUn hub nu procesează adrese MAC, ci transmite pachetele către toate porturile sale, nefiind capabil să diferențieze dispozitivele din rețea."
       },
@@ -161,7 +41,7 @@
       },
       {
         "question": "192.168.2.155 face parte din clasa 192.168.0.0/23.",
-        "answer": "True\nPrefixul /23 acoperă intervalul 192.168.0.0 - 192.168.1.255, deci adresa aparține acestei rețele."
+        "answer": "False\nPrefixul /23 acoperă intervalul 192.168.0.0 - 192.168.1.255, deci adresa nu aparține acestei rețele."
       },
       {
         "question": "Adresa de broadcast nu se poate calcula pe baza adresei de retea si a netmask-ului.",
@@ -252,7 +132,7 @@
         "answer": "True\nCablurile Straight-Through sunt utilizate pentru conectarea calculatoarelor la switch-uri sau hub-uri."
       },
       {
-        "question": "Nu pot exista mai multe calculaoare cu adresa 127.0.0.1.",
+        "question": "Nu pot exista mai multe calculatoare cu adresa 127.0.0.1.",
         "answer": "True\nAdresa 127.0.0.1 este adresa de loopback și este rezervată pentru testarea rețelei pe un singur calculator."
       },
       {
@@ -373,7 +253,7 @@
       },
       {
         "question": "192.168.1.155 face parte din clasa 192.168.0.0/23",
-        "answer": "False\nPentru că masca /23 acoperă intervalul 192.168.0.0 – 192.168.1.255, iar 192.168.1.155 face parte din acest interval, deci afirmația este falsă."
+        "answer": "True\nPentru că masca /23 acoperă intervalul 192.168.0.0 – 192.168.1.255."
       },
       {
         "question": "SMTP este situat la nivelul Transport",
