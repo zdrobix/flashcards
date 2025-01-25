@@ -10,8 +10,11 @@ let flashcards = [];
 let total = 0;
 let start = 0;
 let next_messages = [
+    {message : "Next pls..."},
+    {message : "Thank you, next"},
     {message : "Next"},
-    {message : "Next"}
+    {message : "She's on FIRE"},
+    {message : "Go beautiful!"}
 ];
 
 function fetchInput(inputfile) {
@@ -47,7 +50,9 @@ function updateCard() {
     cardFront.textContent = flashcard.question;
         cardBack.textContent = flashcard.answer;
     flashcards = flashcards.filter(card => card !== flashcard);
-    nextButton.textContent = next_messages[Math.floor(Math.random() * next_messages.length)].message;
+    nextButton.textContent = 'Next';
+    if (switchButton.textContent === 'Antro')
+        nextButton.textContent = next_messages[Math.floor(Math.random() * next_messages.length)].message;
     setTimeout(() => {
         cardBack.style.visibility = 'visible';
     }, 300);
