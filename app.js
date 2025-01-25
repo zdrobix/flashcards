@@ -68,6 +68,7 @@ cardInner.addEventListener('click', () => {
     cardInner.classList.toggle('flipped');
 });
 
+fetchInput('flashcards_antro.json');
 if (flashcards.length > 0)
     updateCard();
 
