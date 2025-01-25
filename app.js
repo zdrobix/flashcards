@@ -80,3 +80,19 @@ if (flashcards.length > 0)
 nextButton.addEventListener('click', updateCard);
 
 switchButton.addEventListener('click', changeCourse)
+
+document.addEventListener("DOMContentLoaded", () => {
+    const cards = document.querySelectorAll(".card-inner");
+    cards.forEach((card) => {
+        card.addEventListener("touchstart", () => {
+            card.classList.add("hover");
+        });
+    });
+    document.addEventListener("touchend", (event) => {
+        cards.forEach((card) => {
+            if (!card.contains(event.target)) {
+                card.classList.remove("hover");
+            }
+        });
+    });
+});
