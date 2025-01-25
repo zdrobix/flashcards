@@ -59,6 +59,7 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    white-space: pre-line;
 }
 
 .card-front {
