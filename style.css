@@ -154,5 +154,11 @@ button:active, .next-button:active, .switch-course:active {
    background-color: rgb(105, 2, 105);
 }
 
-
-
+.card-front,
+.card-back,
+button, 
+.next-button, 
+.switch-course, 
+.number-button {
+    user-select: none;
+}
