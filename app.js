@@ -90,12 +90,15 @@ function updateWidth() {
     if (!card) return;
     if (switchButton.textContent === 'Web') {
         card.style.width = '400px';
+        card.style.height = '400px';
         document.querySelectorAll('.next-button, .switch-course, .number-button').forEach(btn => {
         btn.style.width = '400px';
     });
     } 
     if (switchButton.textContent === 'Antro' || switchButton.textContent === 'Retele') {
         card.style.width = '300px';
+        card.style.height = '300px';
+
         document.querySelectorAll('.next-button, .switch-course, .number-button').forEach(btn => {
         btn.style.width = '300px';
     });
