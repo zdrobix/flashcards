@@ -1063,15 +1063,17 @@
         ]
     },
     {
-        "question": "",
+        "question": "Care dintre urmatoarele reprezinta specificatii ale unor metode din API-ul jQuery",
         "options": [
-            "",
-            "",
-            "",
-            ""
+            "ca pot fi apelate atat in mod sincron cat si in mod asincron",
+            "ca intorc referinta la obiectul pe care au fost apelate",
+            "ca pot fi apelate atat pe obiectul din DOM cat si pe wrapperul jQuery construit in jurul lui",
+            "ca pot fi folosite atat ca functii Setter cat si functii Getter"
         ],
         "answer": [
-            ""
+            "ca pot fi apelate atat in mod sincron cat si in mod asincron",
+            "ca intorc referinta la obiectul pe care au fost apelate",
+            "ca pot fi folosite atat ca functii Setter cat si functii Getter"
         ]
     },
     {
@@ -1084,6 +1086,185 @@
         "answer": [
             "In folderul WEB-INF al aplicatiei web intrucat acesta nu este accesibil de catre un client web",
             "Oriunde altundeva in cadrul sistemului de fisiere dar nu in cadrul directorului aplicatiei web intrucat de acolo baza de date ar putea fi accesata de catre clientii web"
+        ]
+    },
+    {
+        "question" : "In cate instante se instantiaza un servlet",
+        "options" : [
+            "In niciuna, un servlet este executat direct de catre container/application server",
+            "Intr-o singura instanta",
+            "Se creeaza o instanta separata la fiecare cerere facuta de catre un client"
+        ],
+        "answer": [
+            "Intr-o singura instanta"
+        ]
+    },
+    {
+        "question" : "Parametrii de configurare ai unei aplicatii web Java sunt preluati din fisierul de configurare al aplicatiei web in cadrul metodei:",
+        "options" : [
+            "init()",
+            "applicationCreated()",
+            "contextInitialized()"
+        ],
+        "answer": [
+            "init()"
+        ]
+    },
+    {
+        "question" : "O sesiune intr-o aplicatie web Java se termina cu:",
+        "options" : [
+            "session.destroy()",
+            "session.close()",
+            "session.invalidate()"
+        ],
+        "answer": [
+            "session.invalidate()"
+        ]
+    },
+    {
+        "question" : "Ce eveniment se genereaza la un click de mouse pe un element din cadrul documentului?",
+        "options" : [
+            "onclick",
+            "ondoubleclick",
+            "onmouseover",
+            "onmouseclick"
+        ],
+        "answer": [
+            "onclick"
+        ]
+    },
+    {
+        "question" : "Care dintre urmatoarele expresii jQuery se pot folosi interschimbabil?",
+        "options" : [
+            "$(\"#myelem\")[0] si document.getElementById(\"myelem\")",
+            "$(\"#myelem\") si $(document.getElementById(\"myelem\"))",
+            "$(document.myelem) si $(document.getElementById(\"myelem\"))",
+            "$ si jQuery",
+            "$(document).myelem si $(\"myelem\")[0]"
+        ],
+        "answer": [
+            "$(\"#myelem\")[0] si document.getElementById(\"myelem\")",
+            "$(\"#myelem\") si $(document.getElementById(\"myelem\"))",
+            "$ si jQuery"
+        ]
+    },
+    {
+        "question" : "Cum se afiseaza un mesaj prin intermediul unei ferestre de dialog modale in JavaScript?",
+        "options" : [
+            "modalMessage(\"Mesaj\")",
+            "alertBox(\"Mesaj\")",
+            "alert(\"Mesaj\")",
+            "modalBox(\"Mesaj\")"
+        ],
+        "answer": [
+            "alert(\"Mesaj\")"
+        ]
+    },
+    {
+        "question" : "Ce face urmatoarea secventa de cod?\n\n$('ul:has(li)').addClass('patrat').addClass('deplasat').addClass('colorat');",
+        "options" : [
+            "selecteaza toate elementele din liste si le adauga clasele patrat, deplasat si colorat",
+            "selecteaza listele neordonate care au cel putin un element si le adauga clasele patrat, deplasat si colorat",
+            "selecteaza toate listele care au cel putin un element si le adauga clasele patrat, deplasat si colorat",
+            "selecteaza listele ordonate care au cel putin un element si le adauga clasele patrat, deplasat si colorat",
+            "selecteaza toate listele si le adauga clasele patrat, deplasat si colorat"
+        ],
+        "answer": [
+            "selecteaza listele neordonate care au cel putin un element si le adauga clasele patrat, deplasat si colorat"
+        ]
+    },
+    {
+        "question" : "Un client face o cerere iar serverul ii raspunde cu \"404 Not found\". Care dintre urmatoarele afirmatii sunt adevarate:",
+        "options" : [
+            "Chiar daca nu a gasit fisierul cerut de client, serverul ii poate da totusi acestuia un anumit continut HTML",
+            "Daca nu a gasit fisierul cerut, serverul nu ii mai poate returna clientului nimic dupa codul de raspuns 404",
+            "Chiar daca serverul a raspuns cu \"404 Not found\", browserele raspund cu \"200 Ok\" pentru a-i spune serverului ca au primit mesajul de eroare"
+        ],
+        "answer": [
+            "Chiar daca nu a gasit fisierul cerut de client, serverul ii poate da totusi acestuia un anumit continut HTML"
+        ]
+    },
+    {
+        "question" : "Care dintre urmatoarele sunt prefixe acceptate pe unele browsere pentru proprietatile CSS experimentale?",
+        "options" : [
+            "webkit",
+            "o",
+            "moz",
+            "safari",
+            "chrome"
+        ],
+        "answer": [
+            "webkit",
+            "o",
+            "moz"
+        ]
+    },
+    {
+        "question" : "Care dintre urmatoarele sunt scriptlet-uri valide in PHP?",
+        "options" : [
+            "<% %>",
+            "<?php></?>",
+            "<?= ?>",
+            "<? ?>, cu conditia setarii unei optiuni de configurare in php.ini",
+            "<?php ?>",
+            "<php></php>"
+        ],
+        "answer": [
+            "<? ?>, cu conditia setarii unei optiuni de configurare in php.ini",
+            "<?php ?>"
+        ]
+    },
+    {
+        "question" : "Care dintre urmatoarele cuvinte/caractere nu sunt rezervate in JavaScript si se pot folosi ca si nume de variabile?",
+        "options" : [
+            "this, a, b",
+            "with, a, b",
+            "$, a, b",
+            "let, a, b"
+        ],
+        "answer": [
+            "$, a, b"
+        ]
+    },
+    {
+        "question" : "Pentru a centra un element cu display-ul block in cadrul unui alt container se foloseste:",
+        "options" : [
+            "align:center",
+            "margin: 0 auto",
+            "align:middle",
+            "text-align:center"
+        ],
+        "answer": [
+            "margin: 0 auto"
+        ]
+    },
+    {
+        "question" : "O variabila x ce contine valoarea numerica 7 poate fi declarata in JavaScript astfel:",
+        "options" : [
+            "var x = 7",
+            "var x := 7",
+            "x = new Number(7)",
+            "let x = 7",
+            "x = 7"
+        ],
+        "answer": [
+            "var x = 7",
+            "let x = 7",
+            "x = new Number(7)",
+            "x = 7"
+        ]
+    },
+    {
+        "question" : "Care dintre urmatoarele informatii despre plugin-urile jQuery sunt adevarate:",
+        "options" : [
+            "Unele plugin-uri permit portarea codului jQuery pe diferite browsere",
+            "Permit extinderea functionalitatii API-ului standard jQuery cu noi metode si functionalitati",
+            "Unele plugin-uri jQuery permit incadrarea librariei de pe diversele CDN-uri (Content Delivery Network)",
+            "Unele plugin-uri permit rulearea codului jQuery independent"
+        ],
+        "answer": [
+            "Permit extinderea functionalitatii API-ului standard jQuery cu noi metode si functionalitati",
+            "Unele plugin-uri jQuery permit incadrarea librariei de pe diversele CDN-uri (Content Delivery Network)"
         ]
     }
 ]
