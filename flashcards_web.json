@@ -342,124 +342,210 @@
     "answer": ["Folosirea de \"prepared statement\"-uri"]
   },
   {
-    "question": "",
+    "question": "Un apel AJAX se poate face catre o resursa statica oferita de end-point-ul de pe server?",
     "options": [
-        "",
-        "",
-        "",
-        ""
+        "Doar daca in QUERY_STRING / body-ul POST-ului se trimit spre server si parametri",
+        "Nu, niciodata",
+        "Da, intotdeauna"
     ],
-    "answer": [""]
+    "answer": ["Da, intotdeauna"]
   },
   {
-    "question": "",
+    "question": "Unde se poate defini un stil CSS pentru o anumita clasa?",
     "options": [
-        "",
-        "",
-        "",
-        ""
+        "in interiorul tag-ului <style>, localizat in antetul paginii html",
+        "inline, cu ajutorul atributului style aplicat pe un tag html",
+        "intr-un fisier extern specificat cu ajutorul tag-ului <link>"
     ],
-    "answer": [""]
+    "answer": ["in interiorul tag-ului <style>, localizat in antetul paginii html",
+        "inline, cu ajutorul atributului style aplicat pe un tag html",
+        "intr-un fisier extern specificat cu ajutorul tag-ului <link>"]
   },
   {
-    "question": "",
+    "question": "Injectiile JavaScript se datoreaza:",
     "options": [
-        "",
-        "",
-        "",
-        ""
+        "Unor buguri prezente la nivelul browserului web",
+        "Validarii insuficiente server-side la nivelul scriptului ce prelucreaza datele din formular",
+        "Folosirii protocolului http in locul protocolului https",
+        "Validarii insuficiente chiar la nivelul codului JavaScript"
     ],
-    "answer": [""]
+    "answer": ["Validarii insuficiente server-side la nivelul scriptului ce prelucreaza datele din formular"]
   },
   {
-    "question": "",
+    "question": "De pe client se doreste salvarea unor date despre o persoana (numele si varsta acesteia) folosind un apel AJAX realizat print metoda HTTP GET. Care dintre urmatoarele apeluri realizeaza acest lucru:",
     "options": [
-        "",
-        "",
-        "",
-        ""
+        "$.get(\"save.php\", {nume: 'Ion', varsta: 10})",
+        "$.get(\"save.php?nume=Ion&varsta=10\")",
+        "$.get(\"save.php\", 'nume=Ion&varsta=10')"
     ],
-    "answer": [""]
+    "answer": ["$.get(\"save.php\", {nume: 'Ion', varsta: 10})",
+        "$.get(\"save.php?nume=Ion&varsta=10\")"]
   },
   {
-    "question": "",
+    "question": "Care dintre urmatoarele afirmatii despre metoda HTTP POST sunt adevarate?",
     "options": [
-        "",
-        "",
-        "",
-        ""
+        "este recomandat a fi folosita pentru a submite un formular care contine un input de tip password",
+        "trebuie neaparat folosita pentru a submite un formular care contine un input de tip video",
+        "trebuie neaparat folosita pentru a submite un formular care contine un input de tip file"
     ],
-    "answer": [""]
+    "answer": [
+        "este recomandat a fi folosita pentru a submite un formular care contine un input de tip password",
+        "trebuie neaparat folosita pentru a submite un formular care contine un input de tip video",
+        "trebuie neaparat folosita pentru a submite un formular care contine un input de tip file"
+    ]
   },
   {
-    "question": "",
+    "question": "Pentru a verifica succesul unui apel AJAX trebuie ca:",
     "options": [
-        "",
-        "",
-        "",
-        ""
+        "readyState sa fie 4 si request.status sa fie 200",
+        "readyState sa fie 4 si request.status sa fie 100",
+        "readyState sa fie 1 si request.status sa fie 200",
+        "readyState sa fie 0 si request.status sa fie 100"
     ],
-    "answer": [""]
+    "answer": ["readyState sa fie 4 si request.status sa fie 200"]
   },
   {
-    "question": "",
+    "question": "In functie de context, in jQuery $(this) poate fi folosit pentru:",
     "options": [
-        "",
-        "",
-        "",
-        ""
+        "pentru a construi un wrapper jQuery in jurul obiectului window",
+        "pentru a construi un wrapper jQuery in jurul documentului",
+        "a returna obiectul JavaScript de baza in jurul caruia este construit obiectul jQuery curent",
+        "a construi un wrapper jQuery in jurul obiectului pe care se apeleaza un eveniment in interiorul functiei de tratare a evenimentului"
     ],
-    "answer": [""]
+    "answer": ["a construi un wrapper jQuery in jurul obiectului pe care se apeleaza un eveniment in interiorul functiei de tratare a evenimentului"]
   },
   {
-    "question": "",
+    "question": "Care dintre urmatoarele elemente au toate display-urile implicite block?",
     "options": [
-        "",
-        "",
-        "",
-        ""
+        "ul, ol, p, img, div",
+        "ul, ol, p, table, input",
+        "input, div, p, form",
+        "div, p, ul, ol, h1"
     ],
-    "answer": [""]
+    "answer": ["div, p, ul, ol, h1"]
   },
   {
-    "question": "",
+    "question": "Unde se poate insera cod JavaScrupt intr-un document HTML?",
     "options": [
-        "",
-        "",
-        "",
-        ""
+        "doar in sectiunea <body>",
+        "doar in sectiunea <head>",
+        "atat in sectiunea <head> cat si in sectiunea <body>"
     ],
-    "answer": [""]
+    "answer": ["atat in sectiunea <head> cat si in sectiunea <body>"]
   },
   {
-    "question": "",
+    "question": "Care dintre urmatoarele functii PHP este folosita pentru a preveni vulnerabilitatile de tip Cross-Site Scripting (XSS)?",
     "options": [
-        "",
-        "",
-        "",
-        ""
+        "mysqli_real_escape_string",
+        "htmlentities",
+        "filter_xss"
     ],
-    "answer": [""]
+    "answer": ["htmlentities"]
   },
   {
-    "question": "",
+    "question": "Cum se poate \"fura\" un cookie de sesiune al unui alt utilizator?",
     "options": [
-        "",
-        "",
-        "",
-        ""
+        "Prin intermediul unui cod JavaScript injectat de catre atacator",
+        "Prin lipsa invalidarii sesiunii (logout) si navigarea in continuare pe un site malitios",
+        "Prin interceptarea datelor la nivelul retelei de transport in lispa folosirii unei conexiuni sigure"
     ],
-    "answer": [""]
+    "answer": [
+        "Prin intermediul unui cod JavaScript injectat de catre atacator",
+        "Prin lipsa invalidarii sesiunii (logout) si navigarea in continuare pe un site malitios",
+        "Prin interceptarea datelor la nivelul retelei de transport in lispa folosirii unei conexiuni sigure"
+    ]
   },
   {
-    "question": "",
+    "question": "Care dintre urmatoarele vulnerabilitati ar putea fi exploatata pentru a fura sesiunea unui utilizator autentificat?",
     "options": [
-        "",
-        "",
-        "",
-        ""
+        "Cross-Site Scripting (XSS)",
+        "Cross-Site Request Forgery (CSRF)",
+        "SQL Injection"
     ],
-    "answer": [""]
+    "answer": ["Cross-Site Scripting (XSS)"]
+  },
+  {
+    "question": "Ce se va afisa in consola browserului dupa executarea urmatorului cod JavaScript?\n\nif (1==='1') {\n    console.log(\"1 === '1'\");\n} else if (1 == true) {\n    console.log(\"1 == true\");\n} else if (1 === 1.0) {\n    console.log(\"1 === 1.0\");\n}\n",
+    "options": [
+        "nimic",
+        "1 === 1.0",
+        "1 == true",
+        "1 === '1'"
+    ],
+    "answer": ["1 == true"]
+  },
+  {
+    "question": "Un URL de pe back-end poate fi invocat (cerut) atat prin GET cat si prin POST?",
+    "options": [
+        "Nu",
+        "Da",
+        "Doar daca datele primite fir prin GET fie prin POST sunt aceleasi (parametrii trimisi sunt aceeasi)"
+    ],
+    "answer": ["Da"]
+  },
+  {
+    "question": "Ce face urmatoarea secventa de cod\n\n$(':not(p)').addClass('patrat').addClass('colorat');",
+    "options": [
+        "selecteaza toate paragrafele care au clasa patrat si clasa colorat",
+        "selecteaza toate elementele care au clasa patrat si clasa colorat cu exceptia paragrafelor",
+        "selecteaza toate elementele cu exceptia paragrafelor care au clasa patrat si clasa colorat",
+        "selecteaza toate elementele cu exceptia paragrafelor si le adauga clasele patrat si colorat"
+    ],
+    "answer": ["selecteaza toate elementele cu exceptia paragrafelor si le adauga clasele patrat si colorat"]
+  },
+  {
+    "question": "Cum se declara un array vid in PHP?",
+    "options": [
+        "$emptyArray = []",
+        "$emptyArray = array()",
+        "$emptyArray = null",
+        "$emptyArray = {}"
+    ],
+    "answer": ["$emptyArray = []",
+        "$emptyArray = array()"]
+  },
+  {
+    "question": "Pentru a defini o lista ordonata a caror itemi sunt precedati de litere din alfabetul grec in CSS se foloseste:",
+    "options": [
+        "list-type:lower-greek;",
+        "list-style-type:lower-greek;",
+        "list:lower-greek;"
+    ],
+    "answer": ["list-style-type:lower-greek;"]
+  },
+  {
+    "question": "Care dintre urmatoarele tag-uri HTML sunt deprecated in HTML5?",
+    "options": [
+        "center",
+        "font",
+        "b",
+        "body"
+    ],
+    "answer": ["center", "font"]
+  },
+  {
+    "question": "Cum se insereaza corect un fisier extern JavaScript denumit test.js intr-un document HTML?",
+    "options": [
+        "<script name=\"test.js\"></script>",
+        "<script src=\"test.js\">",
+        "<script href=\"test.js\">",
+        "<script src=\"test.js\"></script>"
+    ],
+    "answer": ["<script src=\"test.js\"></script>"]
+  },
+  {
+    "question": "Care sunt asemanarile si diferentele dintre atributele id si name?",
+    "options": [
+        "atributul name se foloseste pentru referirea unui element din CSS/JavaScript",
+        "doua elemente HTML pot avea acelasi nume, dar nu pot avea acelasi id",
+        "orice tag accepta atributul id, nu toate tagurile accepta atributul name",
+        "orice tag accepta atributul name, nu toate tagurile accepta atributul id",
+        "doua elemente HTML pot avea acelasi id, dar nu pot avea acelasi name",
+        "atributul id se foloseste pentru referirea unui element din CSS/JavaScript"
+    ],
+    "answer": ["doua elemente HTML pot avea acelasi nume, dar nu pot avea acelasi id",
+        "orice tag accepta atributul id, nu toate tagurile accepta atributul name",
+    "atributul id se foloseste pentru referirea unui element din CSS/JavaScript"]
   }
 
 ]
