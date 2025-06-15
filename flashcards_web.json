@@ -373,7 +373,7 @@
             "$(\"div\").hidden();",
             "$(\"div\").visible(false);",
             "$(\"div\").css(\"visibility\",\"hidden\");",
-            "$(\"div\")css(\"visibility\", \"hide\";"
+            "$(\"div\").css(\"visibility\", \"hide\";"
         ],
         "answer": [
             "$(\"div\").css(\"visibility\",\"hidden\");"
@@ -725,13 +725,13 @@
         "question": "Pentru a redirectiona automat browser-ul spre un nou URL server-ul poate:",
         "options": [
             "raspunde clientului cu un cod de raspuns de forma 3xx impreuna cu un header location",
-            "trimite ca si continut HTML clientului un link de forma <a hred=\"http://url-nou\"> si simuleaza din Javacript un click de mouse pe acest link",
+            "trimite ca si continut HTML clientului un link de forma <a href=\"http://url-nou\"> si simuleaza din Javacript un click de mouse pe acest link",
             "include noul URL direct pe back-end folosind o directiva include",
             "redirectioneaza clientul folosind o secventa de cod in JavaScript de forma windows.location = \"http://url-nou\";"
         ],
         "answer": [
             "raspunde clientului cu un cod de raspuns de forma 3xx impreuna cu un header location",
-            "trimite ca si continut HTML clientului un link de forma <a hred=\"http://url-nou\"> si simuleaza din Javacript un click de mouse pe acest link",
+            "trimite ca si continut HTML clientului un link de forma <a href=\"http://url-nou\"> si simuleaza din Javacript un click de mouse pe acest link",
             "redirectioneaza clientul folosind o secventa de cod in JavaScript de forma windows.location = \"http://url-nou\";"
         ]
     },
