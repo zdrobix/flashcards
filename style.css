@@ -108,12 +108,12 @@ button, .next-button, .switch-course {
     z-index: 1;
   }
   
-.next-button, .switch-course, .number-button {
+.next-button, .switch-course, .number-button, .score-button {
     width: 300px;
     height: 50px;
 }
   
-.next-button, .number-button {
+.next-button, .number-button, .score-button {
     background-color: purple;
     margin-top: 20px;
 }
@@ -123,7 +123,7 @@ button, .next-button, .switch-course {
     margin-bottom: 20px;
 }
   
-button:before, .next-button:before, .switch-course:before, .number-button:before {
+button:before, .next-button:before, .switch-course:before, .number-button:before, .score-button:before {
     transition: 0.5s all ease;
     position: absolute;
     top: 0;
@@ -161,4 +161,52 @@ button,
 .switch-course, 
 .number-button {
     user-select: none;
+}
+
+.cheeky-checkbox-label {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: plum;
+  margin-bottom: 6px;
+  cursor: pointer;
+  gap: 8px;
+}
+
+.cheeky-checkbox {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  appearance: none;
+  border: 2px solid plum;
+  border-radius: 4px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  transition: border-color 0.2s, background-color 0.2s;
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.cheeky-checkbox:hover {
+  border-color: mediumorchid;
+}
+
+.cheeky-checkbox:checked {
+  background-color: mediumorchid;
+  border-color: mediumorchid;
+}
+
+.cheeky-checkbox:checked::after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 1px;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
 }

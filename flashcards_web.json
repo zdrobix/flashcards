@@ -170,10 +170,10 @@
     {
         "question": "Choose the correct HTML element for the largest heading:",
         "options": [
-            "< heading >",
-            "< head >",
-            "< h6 >",
-            "< h1 >"
+            "<heading>",
+            "<head>",
+            "<h6>",
+            "<h1>"
         ],
         "answer": [
             "<h1>"
@@ -256,7 +256,7 @@
         "options": [
             "type of 1/0 nu are rezultatul NaN, ci Infinity",
             "type of 1 este Number si Number nu se poate imparti la 0, rezultatul fiind NaN",
-            "1/0 este eal cu Infinity si type of Infinity este NaN",
+            "1/0 este egal cu Infinity si type of Infinity este NaN",
             "1/0 este NaN si type of NaN este NaN"
         ],
         "answer": [
@@ -291,7 +291,7 @@
     {
         "question": "Ce face urmatoarea secventa de cod?\n\nvar content = $('li').html();\n$('li').append('<em>' + content + '</em>');",
         "options": [
-            "Introduce continutului primului list item inaintea fiecarui list item",
+            "introduce continutului primului list item inaintea fiecarui list item",
             "continutul dint toate li-urile vor fi scrise cu italic",
             "introduce content dupa primul list item",
             "introduce continutului primului list item dupa fiecare list item",
@@ -389,7 +389,7 @@
             "Selectorul :visible se foloseste pentru a selecta toate elementele care au visibility:hidden si opacity:0"
         ],
         "answer": [
-            "Selectorul :hidden se foloseste pentru a selecta taote elementele ascunse in pagina",
+            "Selectorul :hidden se foloseste pentru a selecta toate elementele ascunse in pagina",
             "Selectorul :visible se foloseste pentru a selecta toate elementele care ocupa spatiu in pagina"
         ]
     },
@@ -533,6 +533,7 @@
         ],
         "answer": [
             "este recomandat a fi folosita pentru a submite un formular care contine un input de tip password",
+            "trebuie neaparat folosita pentru a submite un formular care contine un input de tip video",
             "trebuie neaparat folosita pentru a submite un formular care contine un input de tip file"
         ]
     },
@@ -574,7 +575,7 @@
         ]
     },
     {
-        "question": "Unde se poate insera cod JavaScrupt intr-un document HTML?",
+        "question": "Unde se poate insera cod JavaScript intr-un document HTML?",
         "options": [
             "doar in sectiunea <body>",
             "doar in sectiunea <head>",
@@ -735,7 +736,7 @@
         ]
     },
     {
-        "question": "Ce se intelege print scop global in JavaScript",
+        "question": "Ce se intelege prin scop global in JavaScript",
         "options": [
             "obiectul window",
             "obiectul document",
@@ -761,13 +762,13 @@
     {
         "question": "Pozitionarea relative este folosita pentru:",
         "options": [
-            "a pozitiona/muta un element in diferite directii relativ l an pozitia sa normala",
+            "a pozitiona/muta un element in diferite directii relativ la pozitia sa normala",
             "a pozitiona un element relativ la obiectul document",
             "a pozitiona un element relativ la fereastra browserului (obiectul window)",
             "un container parinte care are elemente fiu pozitionate absolut"
         ],
         "answer": [
-            "a pozitiona/muta un element in diferite directii relativ l an pozitia sa normala",
+            "a pozitiona/muta un element in diferite directii relativ la pozitia sa normala",
             "un container parinte care are elemente fiu pozitionate absolut"
         ]
     },
@@ -850,7 +851,7 @@
         "options": [
             "valoarea unui input readonly se trimite serverului la submit, pe cand cea a unui input disabled nu se trimite serverului",
             "valoarea unui input readonly poate fi modificata din JavaScript pe cand cea a unui input disabled nu poate fi editata nici din JavaScript",
-            "atributele specifica acelasi lucru, faputl ca un input readonly sau disabled nu poate fi editat"
+            "atributele specifica acelasi lucru, faptul ca un input readonly sau disabled nu poate fi editat"
         ],
         "answer": [
             "valoarea unui input readonly se trimite serverului la submit, pe cand cea a unui input disabled nu se trimite serverului"
@@ -955,12 +956,12 @@
     {
         "question": "Care dintre urmatoarele sunt adevarate despre un server web:",
         "options": [
-            "un server web poate fi configurat sa accepte cereri prin protocolul HTTP pe porul 443",
+            "un server web poate fi configurat sa accepte cereri prin protocolul HTTP pe portul 443",
             "un server web poate fi configurat sa accepte cereri printr-un URL de forma file://...",
             "implicit un server web asteapta cereri prin protocolul HTTP pe portul 80 si cereri prin protocolul HTTPS pe portul 443"
         ],
         "answer": [
-            "un server web poate fi configurat sa accepte cereri prin protocolul HTTP pe porul 443",
+            "un server web poate fi configurat sa accepte cereri prin protocolul HTTP pe portul 443",
             "implicit un server web asteapta cereri prin protocolul HTTP pe portul 80 si cereri prin protocolul HTTPS pe portul 443"
         ]
     },
@@ -1265,6 +1266,24 @@
         "answer": [
             "Permit extinderea functionalitatii API-ului standard jQuery cu noi metode si functionalitati",
             "Unele plugin-uri jQuery permit incadrarea librariei de pe diversele CDN-uri (Content Delivery Network)"
+        ]
+    },
+    {
+        "question": "Dandu-se doua variabile $a si $b, cum se poate interschimba valoarea acestora in PHP?",
+        "options": [
+            "list($a, $b) = ($b, $a); ",
+            "array($a, $b) = ($b, $a);",
+            "$a = $b; $b = $a;",
+            "array($a, $b) = [$b, $a];",
+            "list($a, $b) = [$b, $a];",
+            "array($a, $b) = array($b, $a);",
+            "array($a, $b) = list($b, $a);",
+            "list($a, $b) = array($b, $a);",
+            "list($a, $b) = list($b, $a);"
+        ],
+        "answer": [
+            "list($a, $b) = [$b, $a];",
+            "list($a, $b) = array($b, $a);"
         ]
     }
 ]
